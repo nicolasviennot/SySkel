@@ -13,8 +13,8 @@
         "tests"
     ],
     "dependencies": {
-        "bootstrap": "v3.1.1",
-        "jquery": "~2.1.1",
+        "bootstrap": "v3.3.0",
+        "jquery": "latest",
         "jquery-migrate": "~1.2.1",
         "font-awesome": "~4.1",
         "modernizr": "2.6.2"
