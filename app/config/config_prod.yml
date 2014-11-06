@@ -21,3 +21,20 @@ monolog:
             type:  stream
             path:  %kernel.logs_dir%/%kernel.environment%.log
             level: debug
+# Assetic Configuration
+assetic:
+    filters:
+        less:
+            apply_to: "\.less$"
+            # on utilise le lessc installé localement
+            bin: "%kernel.root_dir%/../node_modules/.bin/lessc"
+        cssrewrite:
+            apply_to: "\.css$"
+        uglifycss:
+            # on utilise le uglifycss installé localement
+            bin: "%kernel.root_dir%/../node_modules/.bin/uglifycss"
+            apply_to: "\.css$"
+        uglifyjs2:
+            # on utilise le uglifyjs installé localement
+            bin: "%kernel.root_dir%/../node_modules/.bin/uglifyjs"
+            apply_to: "\.js$"
