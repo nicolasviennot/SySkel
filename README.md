@@ -1,4 +1,0 @@
-SySkel
-======
-
-My Symfony Skeleton
